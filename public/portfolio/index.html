@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- EDIT PAGE TITLE / DESCRIPTION HERE -->
+  <title>Aashika Sana.A | B.Sc. Computer Science with Data Analytics Student</title>
+  <meta name="description" content="Portfolio of Aashika Sana.A, a B.Sc. Computer Science with Data Analytics student skilled in HTML, JavaScript, PHP and C programming." />
+  <meta property="og:title" content="Aashika Sana.A | Student Portfolio" />
+  <meta property="og:description" content="Computer Science with Data Analytics student portfolio: skills, education, projects and contact." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVIGATION BAR ================= -->
+  <header class="navbar" id="navbar">
+    <nav class="container nav-inner" aria-label="Main navigation">
+      <!-- EDIT YOUR LOGO / SHORT NAME HERE -->
+      <a href="#home" class="logo">Aashika<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Student Portfolio &bull; 2026</span>
+
+          <!-- EDIT YOUR NAME HERE -->
+          <h1>Aashika Sana.A</h1>
+
+          <!-- Typing animation text is set in script.js (TYPING_TEXTS) -->
+          <p class="hero-role"><span id="typedText"></span><span class="cursor">&nbsp;</span></p>
+
+          <!-- EDIT YOUR INTRODUCTION HERE -->
+          <p class="lead">
+            Passionate Computer Science student interested in technology, programming,
+            web development, and data analytics. I enjoy learning new technologies and
+            building creative digital solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#skills" class="btn btn-primary">View My Skills</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- ADD YOUR PROFILE PHOTO HERE:
+             Replace assets/profile.jpg with your own photo (same file name),
+             or change the src below to your image path. -->
+        <div class="photo-wrap">
+          <div class="photo-card">
+            <div class="photo-frame" id="photoFrame" role="button" tabindex="0" aria-label="Upload profile photo">
+              <img id="profileImage" src="assets/profile.jpg" alt="Profile photo of Aashika Sana.A" width="768" height="768" />
+              <div class="photo-overlay">
+                <span>Add Your Photo</span>
+                <small>Click to upload from your device</small>
+              </div>
+            </div>
+            <input type="file" id="photoInput" accept="image/*" hidden />
+          </div>
+        </div>
+      </div>
+      <p class="photo-hint">Tip: click the photo to preview your own picture (stays on your device).</p>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About Me</h2>
+          <div class="bar"></div>
+          <p>A short introduction to who I am and what I am working towards.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- EDIT YOUR ABOUT PARAGRAPHS HERE -->
+          <article class="card reveal">
+            <h3>Hello, I'm Aashika 👋</h3>
+            <p>
+              I am currently pursuing a B.Sc. in Computer Science with Data Analytics.
+              My studies cover programming fundamentals, web technologies and the tools
+              used to turn raw data into clear, useful insight.
+            </p>
+            <p>
+              I like building things that people can actually use — small web pages,
+              practice projects and dashboards that make information easier to read.
+              Outside class I keep learning through tutorials, documentation and
+              hands-on experiments.
+            </p>
+            <p>
+              My goal is to grow into a role where web development and data analytics
+              meet, and to keep improving one project at a time.
+            </p>
+          </article>
+
+          <!-- EDIT YOUR PERSONAL DETAILS HERE -->
+          <aside class="card reveal">
+            <ul class="info-list">
+              <li>
+                <span class="info-ico" aria-hidden="true">👤</span>
+                <div><div class="info-label">Name</div><div class="info-value">Aashika Sana.A</div></div>
+              </li>
+              <li>
+                <span class="info-ico" aria-hidden="true">🎓</span>
+                <div><div class="info-label">Course</div><div class="info-value">B.Sc. Computer Science with Data Analytics</div></div>
+              </li>
+              <li>
+                <!-- EDIT YOUR EMAIL HERE -->
+                <span class="info-ico" aria-hidden="true">✉️</span>
+                <div><div class="info-label">Email</div><div class="info-value"><a href="mailto:aashikasana7@gmail.com">aashikasana7@gmail.com</a></div></div>
+              </li>
+              <li>
+                <span class="info-ico" aria-hidden="true">🚀</span>
+                <div><div class="info-label">Career Interest</div><div class="info-value">Computer Science, Web Development &amp; Data Analytics</div></div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>My Skills</h2>
+          <div class="bar"></div>
+          <p>Technologies I work with. Percentages are easy to change in script.js (SKILLS).</p>
+        </div>
+
+        <!-- Skill cards are generated from the SKILLS list in script.js -->
+        <div class="grid-3" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Education</h2>
+          <div class="bar"></div>
+          <p>My academic journey so far.</p>
+        </div>
+
+        <!-- EDIT YOUR EDUCATION HERE (add more .tl-item blocks for more entries) -->
+        <div class="timeline">
+          <article class="tl-item card reveal">
+            <span class="tl-tag">Undergraduate Degree</span>
+            <h3>B.Sc. Computer Science with Data Analytics</h3>
+            <p>Student: Aashika Sana.A</p>
+            <div class="tl-meta">
+              <span class="chip">College Name: Add College Name</span>
+              <span class="chip">Academic Year: Add Year</span>
+              <span class="chip">Location: Add Location</span>
+            </div>
+          </article>
+
+          <article class="tl-item card reveal">
+            <span class="tl-tag">Schooling</span>
+            <h3>Higher Secondary Education</h3>
+            <p>Add a short line about your school studies here.</p>
+            <div class="tl-meta">
+              <span class="chip">School Name: Add School Name</span>
+              <span class="chip">Year: Add Year</span>
+              <span class="chip">Location: Add Location</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Projects</h2>
+          <div class="bar"></div>
+          <p>Selected work. ADD YOUR PROJECTS in the PROJECTS list inside script.js.</p>
+        </div>
+
+        <div class="grid-3" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section id="achievements">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Achievements &amp; Activities</h2>
+          <div class="bar"></div>
+          <p>Certifications, workshops, hackathons, clubs and volunteering.</p>
+        </div>
+
+        <!-- ADD YOUR ACHIEVEMENTS in the ACHIEVEMENTS list inside script.js -->
+        <div class="grid-3" id="achievementsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Contact Me</h2>
+          <div class="bar"></div>
+          <p>I'd be happy to hear about opportunities, projects or collaborations.</p>
+        </div>
+
+        <div class="contact-grid">
+          <aside class="card reveal">
+            <h3>Get in touch</h3>
+            <ul class="info-list">
+              <li>
+                <!-- EDIT YOUR EMAIL HERE -->
+                <span class="info-ico" aria-hidden="true">✉️</span>
+                <div><div class="info-label">Email</div><div class="info-value"><a href="mailto:aashikasana7@gmail.com">aashikasana7@gmail.com</a></div></div>
+              </li>
+              <li>
+                <span class="info-ico" aria-hidden="true">📍</span>
+                <div><div class="info-label">Location</div><div class="info-value">Add Location</div></div>
+              </li>
+            </ul>
+            <a class="btn btn-primary" href="mailto:aashikasana7@gmail.com">Send an Email</a>
+          </aside>
+
+          <form class="card reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="nameField">Your Name</label>
+              <input type="text" id="nameField" name="name" placeholder="Enter your full name" />
+              <span class="error" data-error-for="nameField"></span>
+            </div>
+            <div class="field">
+              <label for="emailField">Your Email</label>
+              <input type="email" id="emailField" name="email" placeholder="you@example.com" />
+              <span class="error" data-error-for="emailField"></span>
+            </div>
+            <div class="field">
+              <label for="messageField">Message</label>
+              <textarea id="messageField" name="message" placeholder="Write your message here..."></textarea>
+              <span class="error" data-error-for="messageField"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <h3>Aashika Sana.A</h3>
+      <small>B.Sc. Computer Science with Data Analytics Student</small>
+
+      <!-- EDIT YOUR SOCIAL MEDIA LINKS HERE (replace the # with your profile URLs) -->
+      <div class="socials">
+        <a href="#" aria-label="GitHub profile" title="GitHub">GH</a>
+        <a href="#" aria-label="LinkedIn profile" title="LinkedIn">in</a>
+        <a href="#" aria-label="Instagram profile" title="Instagram">IG</a>
+      </div>
+
+      <div class="divider"></div>
+      <small>&copy; 2026 Aashika Sana.A | Student Portfolio</small>
+      <small>Designed &amp; Developed with HTML, CSS &amp; JavaScript</small>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
