@@ -255,6 +255,11 @@ function setupNavigation() {
   const toTop = $("#toTop");
   const onScroll = () => {
     navbar.classList.toggle("scrolled", window.scrollY > 12);
+    if (window.scrollY < 120) {
+      $$("a", navLinks).forEach((a) => a.classList.remove("active"));
+      const home = linkFor("home");
+      if (home) home.classList.add("active");
+    }
     toTop.classList.toggle("show", window.scrollY > 480);
   };
   window.addEventListener("scroll", onScroll, { passive: true });
